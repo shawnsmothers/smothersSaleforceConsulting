@@ -1,0 +1,13 @@
+.navBar{
+    background: linear-gradient(to right, #870000, #200e08);
+}
+nav.navbar .navbar-brand{
+    color:rgb(21, 125, 143);
+    font-weight:60;
+    font-size: 32px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left:1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.20rem
+}

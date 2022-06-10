@@ -1,0 +1,39 @@
+<template>
+    <section class="companyInfo-section">
+        <div class="container-fluid pt-5 pb-5">
+            <div class="row">
+                <div class="col-12 col-md-6 text-center mt-md-5">
+                <div class="pt-5 mb-5">
+                    <h2 class="blue-heading-color section-heading">{companyInfo.selectionHeading}</h2>
+
+
+                    <div class="banner line mb-5 "></div>
+                </div>
+                    <p class="fs-4 mb-5">{companyInfo.description}</p>
+                    <div class="row mb-5">
+                        <template for:each={companyInfo.stats} for:item="stat">
+                            <div class="col-sm-4 mb-3" key={stat.label}>
+                                <div class="text-center box">
+                                    <h2 class="fs-2 mb-3 mb-md-0">{stat.value}</h2>
+                                    <span class="fs-4">{stat.label}</span>      
+                                    
+                                </div>
+
+                            </div>
+                        </template>
+
+                    </div>
+                        <p class="mb5 mt-5 fs-4 ">{companyInfo.catchPrase}</p>
+                </div>
+                <div class="col-12 col-md-6">
+                   
+                    <img loading="lazy" src="./resources/images/offerings.png" alt="salesforce cloud services"
+                      class="img-floud" width="100%" height="auto" />
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+</template>
